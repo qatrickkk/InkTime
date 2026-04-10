@@ -1,6 +1,6 @@
 # InkTime Smartwatch - Hardware Design
 
-Acest repository contine fisierele de design hardware pentru proiectul InkTime, un smartwatch open-source. Sunt incluse fisierele pentru etapele EVT si DVT, schemele electrice, PCB-ul, fisierele de fabricatie si modelul mecanic.
+Acest repository contine fisierele de design hardware pentru proiectul InkTime, un smartwatch open-source. Sunt incluse fisierele pentru etapa EVT, schemele electrice, PCB-ul, fisierele de fabricatie si modelul mecanic.
 
 ## Specificatii si Functionalitate Hardware
 Platforma este construita in jurul microcontroller-ului Nordic nRF52840.
@@ -9,20 +9,6 @@ Platforma este construita in jurul microcontroller-ului Nordic nRF52840.
 * Alimentare: Baterie LiPo de 3.7V (model AKY0106). Bateria este lipita direct pe pad-urile placii pentru a economisi spatiu, renuntandu-se la conectorul JST. Incarcarea se face prin portul USB-C. Tensiunea sistemului este coborata la 3.3V folosind un convertor DC/DC.
 * Interfata utilizator: Ecran E-Paper conectat prin SPI (consum redus de energie), 3 butoane fizice pentru navigare si un motor de vibratii (shaker DC) pentru feedback haptic.
 * Senzori: Modul IMU conectat prin I2C pentru detectarea miscarii.
-
-## Mapare Pini nRF52840
-Tabelul de mai jos detaliaza pinii folositi pentru fiecare componenta:
-
-| Pin nRF52840 | Functie | Componenta Conectata | Rol |
-| :--- | :--- | :--- | :--- |
-| [Completati pinul] | I2C SDA | IMU | Date senzor miscare |
-| [Completati pinul] | I2C SCL | IMU | Clock senzor miscare |
-| [Completati pinul] | SPI MOSI | Ecran E-Paper | Date catre display |
-| [Completati pinul] | SPI SCK | Ecran E-Paper | Clock display |
-| [Completati pinul] | GPIO | Buton SW1 | Intrerupere meniu (Sus) |
-| [Completati pinul] | GPIO | Buton SW2 | Intrerupere meniu (Selectie) |
-| [Completati pinul] | GPIO | Buton SW3 | Intrerupere meniu (Jos) |
-| [Completati pinul] | PWM | Shaker | Control vibratii |
 
 ## Bill of Materials (BOM)
 Lista principalelor componente folosite in proiect:
